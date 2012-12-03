@@ -17,6 +17,10 @@ PRODUCT_COPY_FILES += \
     device/htc/msm8660-common/prebuilt/init.qcom.post_boot.sh:system/etc/init.qcom.post_boot.sh \
     device/htc/msm8660-common/prebuilt/init.qcom.efs.sync.sh:system/etc/init.qcom.efs.sync.sh
 
+# GPS
+PRODUCT_COPY_FILES := \
+	device/common/gps/gps.conf_US_SUPL:system/etc/gps.conf
+
 # Permissions
 PRODUCT_COPY_FILES += \
     frameworks/native/data/etc/handheld_core_hardware.xml:system/etc/permissions/handheld_core_hardware.xml \
@@ -42,10 +46,6 @@ PRODUCT_PACKAGES += \
     audio_policy.conf \
     audio.primary.msm8660 \
     libaudioutils
-
-# GPS
-PRODUCT_COPY_FILES += \
-    device/common/gps/gps_us_supl.mk
 
 # Graphics
 PRODUCT_PACKAGES += \
