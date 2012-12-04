@@ -69,6 +69,7 @@ USE_OPENGL_RENDERER := true
 TARGET_NO_HW_VSYNC := true
 TARGET_USES_C2D_COMPOSITION := true
 BOARD_EGL_CFG := device/htc/msm8660-common/configs/egl.cfg
+TARGET_PROVIDES_LIBLIGHTS := true
 
 # Webkit
 ENABLE_WEBGL := true
