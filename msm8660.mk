@@ -123,5 +123,5 @@ PRODUCT_PROPERTY_OVERRIDES += \
 
 # Camera wrapper
 PRODUCT_PACKAGES += \
-    camera.default
+    camera.msm8660
 
